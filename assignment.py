@@ -1,16 +1,18 @@
 import math
+subTotal = 0
+tax = 0
 totalCost = 0
 Large = 6
 ExtraLarge = 10
-onetopping = 1
-twotoppings = 1.75
-threetoppings = 2.50
-fourtoppings = 3.35
 print("Welcome to Juicy Pizzas!")
 print("Choose your size! 'Large', or 'Extra Large'!")
 pizzaSize = input()
 if pizzaSize == Large:
-    totalCost + Large
+    subTotal + Large
 elif pizzaSize == ExtraLarge:
-    totalCost + ExtraLarge
-print(totalCost)
+    subTotal + ExtraLarge
+print("Great! now it's time to choose your toppings")
+print("Would you like peperonni on your pizza? Answer with 'Yes' or 'No'")
+pepperoni = input()
+if pepperoni == Yes:
+    subTotal + 1
