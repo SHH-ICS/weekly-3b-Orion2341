@@ -7,10 +7,8 @@ twotoppings = 1.75
 threetoppings = 2.50
 fourtoppings = 3.35
 def myTexts():
-    txt = "Welcome to Juicy Pizzas!"
-    txt2 = "Choose your size! Large, or Extra Large!"
-    a = txt.center(20)
-    b = txt2.center(20)
-    print(a)
-    print(b)
+    print("Welcome to Juicy Pizzas!")
+    print("Choose your size! Large, or Extra Large!")
+    int(input())
 myTexts()
+
