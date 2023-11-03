@@ -6,9 +6,11 @@ onetopping = 1
 twotoppings = 1.75
 threetoppings = 2.50
 fourtoppings = 3.35
-def myTexts():
-    print("Welcome to Juicy Pizzas!")
-    print("Choose your size! Large, or Extra Large!")
-    int(input())
-myTexts()
-
+print("Welcome to Juicy Pizzas!")
+print("Choose your size! 'Large', or 'Extra Large'!")
+pizzaSize = input()
+if pizzaSize == Large:
+    totalCost + Large
+elif pizzaSize == ExtraLarge:
+    totalCost + ExtraLarge
+print(totalCost)
