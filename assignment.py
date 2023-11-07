@@ -21,24 +21,16 @@ else:
     print("Try again!")
     exit()
 print("Great! now it's time to choose your toppings")
-print("How many toppings would you like to choose?")
-print("one, two, three, or four")
-numberOfToppings = input()
-if numberOfToppings == "one":
-    pizzaToppingsCost + one
-elif numberOfToppings == "two":
-    pizzaToppingsCost + two
-elif numberOfToppings == "three":
-    pizzaToppingsCost + three
-elif numberOfToppings == "four":
-    pizzaToppingsCost + four
+numberOfToppings = int(input("How many toppings would you like to choose between 1-4?"))
+if numberOfToppings in pizzaToppingsCost:
+    toppingsCost = pizzaToppingsCost[numberOfToppings]
 else:
     print("Invalid number of toppings")
     print("Try again!")
     exit()
-subTotal = pizzaSizeCost + pizzaToppingsCost
+subTotal = pizzaSizeCost + toppingsCost
 tax = subTotal * taxRate
-totalCost = subTotal + taxRate
-print(subTotal)
-print(tax)
-print(totalCost)
+totalCost = subTotal + tax
+print("Your subTotal is $",subTotal)
+print("Your tax is $",tax)
+print("Your totalCost is$",totalCost)
